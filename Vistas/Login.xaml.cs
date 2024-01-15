@@ -9,9 +9,14 @@ public partial class Login : ContentPage
 
     private void btnIniciar_Clicked(object sender, EventArgs e)
     {
-        string usuario = "estudiante2024";
-        string contrasena = "uisrael2024";
-        if (txtUsuario.Text == usuario && txtContrasena.Text == contrasena)
+        string usuario = txtUsuario.Text;
+        string contrasena = txtContrasena.Text;
+        if (txtUsuario.Text == "estudiante2024" && "uisrael2024" == contrasena)
+        {
+            DisplayAlert("Bienvenido", "Usuario : " + usuario, "OK");
+            Navigation.PushAsync(new Vistas.Registro(usuario));
+        }
+        if (txtUsuario.Text == "examen1" && txtContrasena.Text == "parcial1")
         {
             DisplayAlert("Bienvenido", "Usuario : " + usuario, "OK");
             Navigation.PushAsync(new Vistas.Registro(usuario));

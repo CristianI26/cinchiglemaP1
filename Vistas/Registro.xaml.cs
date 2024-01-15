@@ -10,10 +10,9 @@ public partial class Registro : ContentPage
 
     private void btnCalculo_Clicked_1(object sender, EventArgs e)
     {
-        double monto = Convert.ToDouble(txtmontoI.Text);
-        double aux1 = 1500 - monto;
-        double aux2 = (monto) * 4;
-        double pago = (aux2) * 1.04;
+        double monto = 1500 - Convert.ToDouble(txtmontoI.Text);
+        double aux2 = monto / 4;
+        double pago = aux2 * 1.04;
         // double pago = monto + aux3;
         
         txtpagoM.Text = pago.ToString();
