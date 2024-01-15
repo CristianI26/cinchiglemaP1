@@ -21,6 +21,11 @@ public partial class Login : ContentPage
             DisplayAlert("Bienvenido", "Usuario : " + usuario, "OK");
             Navigation.PushAsync(new Vistas.Registro(usuario));
         }
+        if (txtUsuario.Text == "Cristian" && txtContrasena.Text == "2024")
+        {
+            DisplayAlert("Bienvenido", "Usuario : " + usuario, "OK");
+            Navigation.PushAsync(new Vistas.Registro(usuario));
+        }
         else
 
         {

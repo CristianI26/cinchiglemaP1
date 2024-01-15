@@ -4,8 +4,9 @@
              x:Class="cinchiglemaP1.Vistas.Resumen"
              Title="Resumen">
     <VerticalStackLayout>
+        <Label x:Name="lblusuario"/>
         <Label 
-            Text="Welcome to .NET MAUI!"
+            Text="Resumen"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
     </VerticalStackLayout>

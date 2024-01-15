@@ -37,6 +37,7 @@
            Grid.Column="0"/>
             <Entry x:Name="txtContrasena"
        Placeholder="Ingrese la contraseña"
+                   Keyboard="Numeric"
        IsPassword="True"
        Grid.Row="1"
        Grid.Column="1"/>
@@ -57,6 +58,7 @@
         Text="Iniciar Sesion"
         Clicked="btnIniciar_Clicked"/>
         <Button x:Name="btnAcerca"
+                
                 Grid.Row="0"
                 Grid.Column="1"
                 Text="Acerca de"

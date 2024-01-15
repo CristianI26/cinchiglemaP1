@@ -22,6 +22,6 @@ public partial class Registro : ContentPage
 
     private void btnResumen_Clicked(object sender, EventArgs e)
     {
-
+        Navigation.PushAsync(new Vistas.Resumen(usuario));
     }
 }
